@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Belanosima", sans-serif;
+}
+
+.container-fluid {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(126, 125, 125, 0.75);
+}
+
+.navbar {
+  background-color: rgba(143, 142, 142, 0.75);
+  transition: background-color 0.3s;
+}
+
+/*Media para estilizar la barra cuando se hace scroll down*/
+@media screen and (min-width: 50px) {
+  body.scrolled .navbar {
+    background-color: gray;
+  }
+}
+.fuentes {
+  font-size: 18px;
+}
+.fuentes li a:hover {
+  border-radius: 3px;
+  color: #fff;
+  background: black;
+}
+.fuentes a {
+  color: black;
+  transition: all 0.5s;
+}
+
+/*Media para estilizar el menu hamburguesa*/
+@media screen and (max-width: 550px) {
+  .navBar {
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    border-radius: 7px;
+    padding: 2rem;
+  }
+  .navBar a {
+    color: black;
+  }
+}
+/*Estilizacion logos*/
+.logo {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+
+.logoDos {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoDos img {
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+  margin-left: -1.6rem;
+}
+
+/*Estilizacion logos de redes*/
+.redes img {
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 30px;
+  border-radius: 7px;
+  width: 30px;
+  height: 30px;
+}
+.redes img:hover {
+  background: white;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s;
+}
+
+.derechos {
+  color: black;
+}
+
+.about {
+  margin-top: 80px;
+  background-color: gray;
+  padding: 8rem;
+}
+
+.encabezado {
+  margin-top: 2rem;
+  padding: 4rem;
+}
+
+/*Perzonalizacion para los a*/
+.accionUno, .accionDos {
+  background-color: black;
+  border: none;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+  border-radius: 8px;
+}
+.accionUno:hover, .accionDos:hover {
+  opacity: 80%;
+  background-color: white;
+  color: black;
+  z-index: 1;
+}
+
+.accionUno::before, .accionDos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, white, blue, white, white, blue, white);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*ESTEND del boton numero 1*/
+.accionDos {
+  font-size: 20px;
+}
+
+/*banner final de modulo cotizacion en desarrollo*/
+.cotizar {
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../img/carrusel2.png) no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.masServicios {
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+}
+.masServicios .cartaUno h2 {
+  margin-top: 100px;
+}
+.masServicios .botonServices {
+  background-color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+.masServicios .botonServices:hover {
+  background-color: gray;
+  color: black;
+}
+
+/*Animacion flecha carrusel*/
+.carrusel {
+  transition: all 1s;
+}
+.carrusel span:hover {
+  height: 60px;
+  width: 60px;
+}
+.carrusel img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .carrusel {
+    margin-top: 77px;
+  }
+  .carrusel img {
+    height: 180px;
+  }
+}
+.nosotros {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/equipo.jpg) no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.contenido {
+  margin-top: 1.5rem;
+}
+
+.parrafo {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+/*Estilo para los mienbros del equipo*/
+.equipo {
+  border-radius: 9px;
+  margin-top: -6rem;
+}
+.equipo h3 {
+  margin-top: 100px;
+}
+
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.1);
+}
+.team-member h4,
+.team-member .h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.portafilio {
+  margin-top: 80px;
+  background-color: gray;
+  padding: 4rem 0;
+}
+.portafilio .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portafilio .name img {
+  width: 60%;
+  border-radius: 6px;
+}
+
+.aliados {
+  background: linear-gradient(rgba(94, 93, 93, 0.35), rgba(255, 255, 255, 0.35)), url(../img/casco.jpg) no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.clientes {
+  color: black;
+}
+.clientes h1 {
+  margin-top: 40px;
+}
+.clientes a {
+  background-color: gray;
+  color: black;
+}
+.clientes a:hover {
+  background-color: black;
+  color: #fff;
+}
+.clientes .imagen-cliente {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.Contacto {
+  background: url(../img/casco.jpg) no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+h1 {
+  color: black;
+  margin-top: 145px;
+  text-align: center;
+  font-size: 30px;
+}
+
+form {
+  width: 100%;
+  background-color: gray;
+  border-radius: 6px;
+  padding: 40px;
+  text-decoration: none;
+}
+form .form {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form .terminos {
+  margin-top: 80px;
+  background-color: gray;
+  padding: 5rem 0;
+}
+form .checkTerminos a {
+  text-decoration: none;
+  color: black;
+}
+form .boton {
+  background-color: black;
+  color: white;
+}
+form .boton:hover {
+  background-color: white;
+  color: black;
+}
+@media screen and (max-width: 1024px) {
+  form form {
+    width: 60%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  form .contacto h1 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 7rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  form .contacto h1 {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto form {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .contacto form {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.terminos {
+  margin-top: 6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
